@@ -1,0 +1,175 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #b0b0b0;
+  }
+  
+  .nav {
+        height: 40px;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        background-color: #262529;
+        overflow-x: hidden;
+       line-height: 0;
+
+       
+      }
+
+    
+      .nav ul{
+        display: flex;
+        float: right;
+        top: 0;
+      }
+      .nav ul li{
+        list-style: none;
+      }
+      
+      .nav ul li a{
+        color: #fff;
+        text-align: right;
+        margin: 0 20px;
+      }
+      .icon{
+        display: none;
+      }
+  
+
+
+  .sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 40px;
+    left: 0;
+    background-color: dimgray;
+    overflow-x: hidden;
+    
+  }
+  .sidenav a{
+    color: #000;
+  }
+  .rightnav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 40px;
+    right: 0;
+    background-color: #787b79;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 2px 8px 2px 6px;
+    text-decoration: none;
+    font-size: 16px;
+    
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+    background-color: #262529;
+  }
+  
+  .main {
+    margin-top: 80px;
+    margin-left: 160px ; /* Same as the width of the sidenav */
+    margin-right: 170px ;
+    font-size: 28px; /* Increased text to enable scrolling */
+    text-align: justify;
+    padding: 0px 10px;
+   }
+
+
+.footer{
+   
+    height: 500px;
+    margin: 0 160px;
+    background-color: #920e22;
+
+}
+
+
+
+
+
+
+  
+  @media screen and (max-height: 950px) {
+   body{
+    
+   }
+  }
+
+  @media screen and (max-width: 850px) {
+    
+    
+    body{
+      height: 100%;
+      width: 100%;
+      background-color: #1dba47;
+    }
+
+   
+    .nav {
+      height: 40px;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #711994;
+      
+     
+    }
+
+    .nav ul{
+      display: none;
+      width: 400px;
+      height: 400px;
+      background-color: #421994;
+    }
+    .nav ul li{
+      display: block;
+    }
+  
+    .logo{
+      float: right; 
+      color: #fff; 
+      margin-left: 50px; 
+      font-size: 20px; 
+     line-height: 0;
+    }
+
+    .icon{
+      display: block;
+    }
+
+    .sidenav{
+      display: none;
+    }
+
+    .rightnav{
+
+      display: none;
+
+    }
+    .main{
+      display: none;
+    }
+
+
+
+
+
+
+
+  }
